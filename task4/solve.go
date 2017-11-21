@@ -41,7 +41,7 @@ func DifferentWordsCount(text string)  int{
       word = word + string(symbol)
     }
   }
-  return len(myMap);
+  return len(myMap) - 1;
 }
 
 //func main(){
