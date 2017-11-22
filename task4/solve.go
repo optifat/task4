@@ -41,6 +41,5 @@ func DifferentWordsCount(text string)  int{
     }
   }
   delete(myMap, string(``))
-  fmt.Println(myMap)
   return len(myMap);
 }
