@@ -1,6 +1,5 @@
 package main
 
-//import "fmt"
 import "unicode"
 
 func RemoveEven(arr []int) []int{
@@ -45,13 +44,3 @@ func DifferentWordsCount(text string)  int{
   fmt.Println(myMap)
   return len(myMap);
 }
-
-//func main(){
-//  array := []int{ 98, 93, 77, 82, 83 }
-//  fmt.Println(RemoveEven(array));
-//  gen := PowerGenerator(2)
-//  fmt.Println(gen()) // Должно напечатать 2
-//  fmt.Println(gen()) // Должно напечатать 4
-//  fmt.Println(gen()) // Должно напечатать 8
-//  fmt.Println(DifferentWordsCount("Hello, world!HELLO  wOrlD...12") - 1)
-//}
