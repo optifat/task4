@@ -6,7 +6,7 @@ import "unicode"
 func RemoveEven(arr []int) []int{
   result := []int{}
   for _, element := range arr{
-    if element%2 == 0{
+    if element%2 == 1{
       result = append(result, element);
     }
   }
