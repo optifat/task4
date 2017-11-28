@@ -23,19 +23,19 @@ func PowerGenerator(b int) (func() int){
 
 }
 
-func DifferentWordsCount(text string) int {
-    word := ``
-    myMap := make(map[string]bool)
-    for i := 0; i < len(text); i++ {
-        for ;(i < len(text) && unicode.IsLetter(rune(text[i]))) ; i++{
-            str += string(unicode.ToLower(rune(text[i])))
+func DifferentWordsCount(c string) int {
+    str := ``
+    x := make(map[string]bool)
+    for i := 0; i < len(c); i++ {
+        for ;(i < len(c) && unicode.IsLetter(rune(c[i]))) ; i++{
+            str = str + string(unicode.ToLower(rune(c[i])))
         }
-        if(len(word) > 0){
-            myMap[word] = true;
+        if(len(str) > 0){
+            x[str] = true;
         }
         str = ``
     }
-    return len(myMap)
+    return len(x)
 }
 /*
 func main(){
